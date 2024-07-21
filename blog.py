@@ -88,7 +88,7 @@ def blog(topic):
         agents = [researcher,writer],
         tasks = [r_task,w_task],
         verbose = 2,
-        process = Process.Sequential,
+        process = Process.sequential,
     )
     response = crew.kickoff(inputs={"topic":topic})
 
